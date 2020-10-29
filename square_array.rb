@@ -1,6 +1,7 @@
+
 def square_array(array)
-  Enumerator.new do |y|
-    array.each { |e| y << e ** 2 }    
-  end
-  .take(array.length)
+new_array =[]
+   array.each { |num| new_array << num ** 2 }
+
+new_array
 end
